@@ -1,0 +1,110 @@
+li {list-style-type: none;
+list-style: none;}
+
+ul {margin-left: auto;margin-right: auto}
+
+.octocat > a > img {
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  width:100%;
+  height:auto;
+}
+
+.image-footer > span:before {content: "\00a0 #"}
+.image-caption > a:before{content: "\00a0 "}
+.image-caption > a:after{content: "\00a0 "}
+
+.image-footer img {
+  border: 1px solid #ffffff;
+  border-radius: 1px;
+  width:28px;
+  height:28px;}
+
+ul{display: inline-block}
+
+a{text-decoration: none;
+  font-weight: bold;
+  color: #333333}
+
+a:visited{text-decoration: none;
+  font-weight: bold;
+  color: #333333}
+
+.image-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    font: ;
+    font-size:12px;
+    font-weight: bold;
+    color: #cacaca;
+    border-bottom: 1px solid #d5d5d5;
+    position: relative;
+}
+
+.authors{
+padding-left:0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-content:flex-end;
+  align-items: center;
+}
+
+.image-caption{
+
+    background: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content:flex-end;
+    align-items: center;
+}
+
+.octodex {
+  padding-left: 20px;
+  padding-right:20px;
+    width: 100%px;
+    height: 100%;
+    background: white;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.octocat {background-color: white;
+    width: 445px;
+    height: 526px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    margin-left:25px;
+}
+
+ul li a:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 9px 0 9px;
+    border-color: #CACACA transparent transparent transparent;
+    position: absolute;
+    top: -5px;
+    right: 3px;
+}
+
+
+
+
+@media (max-width: 815px) {
+ .octodex{flex-direction: column}
+
+}
